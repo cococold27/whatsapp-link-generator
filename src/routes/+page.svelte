@@ -317,7 +317,7 @@
                 rgba(255, 255, 255, 0.5),
                 rgba(255, 255, 255, 0.5)
             ),
-            url("images/background-image.jpg");
+            url("/images/background-image.jpg");
 
         background-position: center;
         background-size: cover;
