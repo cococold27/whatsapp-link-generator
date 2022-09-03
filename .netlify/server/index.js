@@ -2000,7 +2000,22 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-const template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n\n<head>\n	<meta charset="utf-8" />\n	<link rel="icon" href="' + assets2 + '/images/whatsapp-site-icon.png" />\n	<meta name="viewport" content="width=device-width" />\n\n	<!-- Google Fonts -->\n	<link rel="preconnect" href="https://fonts.googleapis.com">\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n	<link\n		href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"\n		rel="stylesheet">\n\n	' + head + "\n</head>\n\n<body>\n	<div>" + body + "</div>\n</body>\n\n</html>";
+const template = ({ head, body, assets: assets2, nonce }) => `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BVRQNRTYWX"><\/script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-BVRQNRTYWX');
+	<\/script>
+
+	<meta charset="utf-8" />
+	<link rel="icon" href="` + assets2 + '/images/whatsapp-site-icon.png" />\n	<meta name="viewport" content="width=device-width" />\n\n	<!-- Google Fonts -->\n	<link rel="preconnect" href="https://fonts.googleapis.com">\n	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n	<link\n		href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"\n		rel="stylesheet">\n\n	' + head + "\n</head>\n\n<body>\n	<div>" + body + "</div>\n</body>\n\n</html>";
 let read = null;
 set_paths({ "base": "", "assets": "" });
 let default_protocol = "https";
