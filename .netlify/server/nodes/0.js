@@ -32,6 +32,6 @@ __export(stdin_exports, {
 module.exports = __toCommonJS(stdin_exports);
 const index = 0;
 const component = async () => (await Promise.resolve().then(() => __toESM(require("../entries/fallbacks/layout.svelte.js")))).default;
-const file = "_app/immutable/components/layout.svelte-c62ac323.js";
-const imports = ["_app/immutable/components/layout.svelte-c62ac323.js", "_app/immutable/chunks/index-2b05990c.js"];
+const file = "_app/immutable/components/layout.svelte-3de084bc.js";
+const imports = ["_app/immutable/components/layout.svelte-3de084bc.js", "_app/immutable/chunks/index-2741cab5.js"];
 const stylesheets = [];

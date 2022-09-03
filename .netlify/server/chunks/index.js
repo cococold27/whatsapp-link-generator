@@ -20,6 +20,7 @@ __export(stdin_exports, {
   a: () => safe_not_equal,
   b: () => subscribe,
   c: () => create_ssr_component,
+  d: () => add_attribute,
   e: () => escape,
   g: () => getContext,
   m: () => missing_component,
@@ -127,4 +128,10 @@ function create_ssr_component(fn) {
     },
     $$render
   };
+}
+function add_attribute(name, value, boolean) {
+  if (value == null || boolean && !value)
+    return "";
+  const assignment = boolean && value === true ? "" : `="${escape(value, true)}"`;
+  return ` ${name}${assignment}`;
 }

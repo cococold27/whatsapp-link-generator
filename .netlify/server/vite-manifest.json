@@ -32,6 +32,9 @@
     "isEntry": true,
     "imports": [
       "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/+page-aab7790e.css"
     ]
   },
   "_index.js": {
