@@ -31,10 +31,9 @@
     }
 </script>
 
-<button id="copy-button" class="btn btn-primary-dark" class:active on:click={copyLink}>Copy Link</button>
-
-<style lang="scss">
-    #copy-button {
-        margin-top: 1.5rem;
-    }
-</style>
+<button
+    id="copy-button"
+    class="btn btn-primary-dark"
+    class:active
+    on:click={copyLink}>Copy Link</button
+>

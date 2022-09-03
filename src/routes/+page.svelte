@@ -137,7 +137,11 @@
                                 readonly
                             />
 
-                            <CopyButton link={whatsappLink} />
+                            <div class="generated-whatsapp-link-buttons">
+                                <CopyButton link={whatsappLink} />
+    
+                                <a href="{whatsappLink}" target="_blank" rel="noopener" class="btn">Open Link</a>
+                            </div>
                         </div>
                     {/if}
 
@@ -504,7 +508,17 @@
         border-top: 2px solid rgba(0, 0, 0, 0.1);
     }
 
+    .generated-whatsapp-link-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        margin-top: 1.5rem;
+    }
+
     input[type="submit"] {
+        -webkit-appearance: none;
         margin-top: 1.75rem;
     }
 
@@ -704,6 +718,10 @@
         .whatsapp-number-container {
             display: grid;
             gap: 1.25rem;
+        }
+
+        .generated-whatsapp-link-buttons {
+            flex-direction: column;
         }
     }
 
