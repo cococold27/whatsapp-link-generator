@@ -37,7 +37,7 @@
     }
 
     function generateQRCode() {
-        console.log('generateQRCode');
+        console.log("generateQRCode");
 
         fetch(
             `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${whatsappLink}`
@@ -69,7 +69,8 @@
                 target="_blank"
                 rel="noopener">WhatsApp</a
             > link with a customized message and allow your customers to message
-            you without having to add your phone number.
+            you without having to add your phone number. In addition, you also get
+            a QR code for the generated link.
         </p>
     </div>
 </section>
@@ -483,15 +484,8 @@
         margin: auto;
     }
 
-    .row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5%;
-    }
-
     .whatsapp-number-container {
         display: flex;
-        grid-template-columns: 1fr 2fr;
         gap: 5%;
 
         white-space: nowrap;
@@ -512,10 +506,6 @@
 
     input[type="submit"] {
         margin-top: 1.75rem;
-    }
-
-    .country-code-container {
-        width: min-content;
     }
 
     .country-code-inner-container {
@@ -540,6 +530,7 @@
     .whatsapp-preview-container {
         position: relative;
         width: 16rem;
+        max-width: 90%;
         aspect-ratio: 1 / 2;
 
         margin: auto;
@@ -692,6 +683,41 @@
             height: 0.5rem;
 
             background-color: var(--light-green);
+        }
+    }
+
+    @media (max-width: 1023px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .preview-col {
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .container {
+            width: 90%;
+        }
+
+        .whatsapp-number-container {
+            display: grid;
+            gap: 1.25rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .country-code-container {
+            width: min-content;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5%;
         }
     }
 </style>
