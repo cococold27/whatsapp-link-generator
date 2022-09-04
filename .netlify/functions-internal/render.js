@@ -5,7 +5,7 @@ exports.handler = init({
 	assets: new Set(["favicon.png","icons/call-outline.svg","icons/checkmark-done-sharp.svg","icons/chevron-back-outline.svg","icons/videocam-outline.svg","images/background-image.jpg","images/default-profile-picture.png","images/phone-frame.png","images/whatsapp-background-without-color.png","images/whatsapp-background.jpg","images/whatsapp-site-icon.png","js/qrcode.js"]),
 	mimeTypes: {".png":"image/png",".svg":"image/svg+xml",".jpg":"image/jpeg",".js":"application/javascript"},
 	_: {
-		entry: {"file":"_app/immutable/start-85d1cc30.js","imports":["_app/immutable/start-85d1cc30.js","_app/immutable/chunks/index-2741cab5.js","_app/immutable/chunks/singletons-357b3e89.js"],"stylesheets":[]},
+		entry: {"file":"_app/immutable/start-11716459.js","imports":["_app/immutable/start-11716459.js","_app/immutable/chunks/index-2741cab5.js","_app/immutable/chunks/singletons-c96b9f51.js"],"stylesheets":[]},
 		nodes: [
 			() => Promise.resolve().then(() => require('../server/nodes/0.js')),
 			() => Promise.resolve().then(() => require('../server/nodes/1.js')),

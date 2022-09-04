@@ -155,7 +155,10 @@
                             <h2>QR Code</h2>
 
                             <a href={qrCode} target="_blank" rel="noopener">
-                                <img src={qrCode} alt="" />
+                                <img
+                                    src={qrCode}
+                                    alt="QR Code for generated WhatsApp Link"
+                                />
                             </a>
                         </div>
                     {/if}
@@ -169,7 +172,7 @@
                     <img
                         id="phone-frame"
                         src="/images/phone-frame.png"
-                        alt=""
+                        alt="Phone Frame"
                     />
 
                     <div class="preview-container">
@@ -194,7 +197,7 @@
                                 <div class="whatsapp-profile">
                                     <img
                                         src="/images/default-profile-picture.png"
-                                        alt=""
+                                        alt="WhatsApp Profile"
                                     />
 
                                     <div class="whatsapp-number">
@@ -384,11 +387,7 @@
         margin-bottom: 1.5rem;
     }
 
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h2 {
         color: var(--teal-green);
 
         margin-top: 0;
@@ -623,15 +622,6 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-    }
-
-    .person-icon {
-        fill: white;
-
-        background-color: red;
-
-        border-radius: 50%;
-        padding: 1rem;
     }
 
     .whatsapp-profile {
