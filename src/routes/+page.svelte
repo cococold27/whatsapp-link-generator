@@ -559,6 +559,9 @@
 
         border-radius: 2.25rem;
         overflow: hidden;
+
+        user-select: none;
+        pointer-events: none;
     }
 
     #phone-frame {
