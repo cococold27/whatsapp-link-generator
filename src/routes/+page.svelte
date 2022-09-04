@@ -54,8 +54,8 @@
     <title>{SITE_TITLE}</title>
     <meta
         name="description"
-        content="Generate WhatsApp link with custom message and allow your customers to message you without
-    having to add your phone number."
+        content="Generate WhatsApp link with a customized message and allow your customers to message
+        you without having to add your phone number."
     />
 </svelte:head>
 
@@ -139,8 +139,13 @@
 
                             <div class="generated-whatsapp-link-buttons">
                                 <CopyButton link={whatsappLink} />
-    
-                                <a href="{whatsappLink}" target="_blank" rel="noopener" class="btn">Open Link</a>
+
+                                <a
+                                    href={whatsappLink}
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="btn">Open Link</a
+                                >
                             </div>
                         </div>
                     {/if}
@@ -426,7 +431,6 @@
         width: 100%;
 
         margin: 0;
-        padding: 0;
         border: 0;
         border-radius: 0;
         outline: none;
