@@ -1,6 +1,10 @@
 # Create WhatsApp Link
 
+Generate WhatsApp link with a customized message and allow your customers to message you without having to add your phone number. In addition, you also get a QR code for the generated link.
+
 [Create WhatsApp Link](https://create-wa-link.netlify.app/)
+
+---
 
 # create-svelte
 
